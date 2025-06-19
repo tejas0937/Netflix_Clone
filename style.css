@@ -5,46 +5,138 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-
 body {
     background-color: black;
 }
-
 .main {
     background-image: url("Source/bg.jpg");
     background-position: center center;
-    background-size: max(1200px, 100vw);
+    background-size: max(1350px, 100vw);
     background-repeat: no-repeat;
-    height: 644px;
+    height: 758px;
     position: relative;
 }
-
 .main .box {
-    height: 644px;
+    height: 758px;
     width: 100%;
     opacity: 0.69;
     position: absolute;
     top: 0;
     background-color: black;
 }
-
 nav {
-    max-width: 75vw;
+    max-width: 65vw;
     justify-content: space-between;
     margin: auto;
     display: flex;
     align-items: center;
     height: 100px;
 }
-
 nav img {
     color: red;
     width: 130px;
     position: relative;
     z-index: 10;
 }
-
 nav button {
     position: relative;
     z-index: 10;
+}
+.hero{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -80px;
+    color: aliceblue;
+}
+.hero> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 54px;
+    text-align: center;
+}
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+}
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.hero> :nth-child(4) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+.hero2{
+    display: flex;
+    margin: 50px 15px 0px 15px ;
+    gap: 15px;
+}
+.curve{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    
+}
+.seperation{
+    width: 100%; 
+    height: 90px; 
+    background-color: black; 
+    border-top: solid 3px #ff0000;
+    border-color: #ff00004b transparent transparent transparent;
+    border-radius: 60%/50px 50px 0 0;
+    position: absolute;
+    top: -55%;
+    box-shadow: inset 0 30px 50px -35px rgba(93, 0, 255, 0.3);
+    
+}
+.btn{
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-red{
+    background-color: #ff0000;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 5px 20px;
+}
+.btn-lang{
+    background-color: rgba(0, 0, 0, 0.378);
+    color: aliceblue;
+    font-weight: 51px;
+    padding: 5px 25px;
+    margin: 20px;
+    border: 0.5px solid rgb(206, 206, 206);
+}
+.hero input{
+    background-color: rgba(0, 0, 0, 0.378);
+    border-radius: 5px;
+    padding: 10px 150px 10px 5px;
+    border: 0.5px solid rgb(206, 206, 206);
+    font-size: 12;
+    color: aliceblue;
+}
+.trending{
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+.trending h2{
+    position: absolute;
+    top: 0;
+    left: 10%;
 }
