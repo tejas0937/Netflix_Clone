@@ -7,11 +7,12 @@
 }
 body {
     background-color: black;
+    width: 100%;
 }
 .main {
     background-image: url("Source/bg.jpg");
     background-position: center center;
-    background-size: max(1350px, 100vw);
+    background-size: max(1350px, 100%);
     background-repeat: no-repeat;
     height: 758px;
     position: relative;
@@ -84,8 +85,7 @@ nav button {
 .curve{
     position: relative;
     width: 100%;
-    height: 80px;
-    
+    height: 80px;  
 }
 .seperation{
     width: 100%; 
@@ -95,7 +95,7 @@ nav button {
     border-color: #ff00004b transparent transparent transparent;
     border-radius: 60%/50px 50px 0 0;
     position: absolute;
-    top: -55%;
+    top: -85%;
     box-shadow: inset 0 30px 50px -35px rgba(93, 0, 255, 0.3);
     
 }
@@ -129,14 +129,88 @@ nav button {
 }
 .trending{
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    color: white;
+    flex-wrap: wrap;
+    color: rgb(0, 0, 0);
     width: 100%;
     height: 50vh;
     position: relative;
+    gap: 10px;
 }
 .trending h2{
     position: absolute;
     top: 0;
+    color: aliceblue;
     left: 10%;
+}
+.trending .cards{
+    width: 10%;
+    height: 300px;
+    padding: 50px;
+    margin-top: 15px;
+    position: relative;
+}
+.cards p{
+    font-size: 80px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px white;
+    position: absolute;
+    top: 55%;
+    left: 8%;
+}
+
+.more{
+    width: 100%;
+    height: 50vh;
+    color: aliceblue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+.more h2{
+    position: absolute;
+    top: 0;
+    margin: 50px 0;
+    color: aliceblue;
+    left: 10%;
+}
+.reason{
+    width: 20%;
+    height: 50vh;   
+    border-radius: 10px;
+    background: linear-gradient(131deg,rgba(17, 0, 74, 1) 0%, rgba(89, 0, 97, 1) 60%, rgba(17, 0, 33, 1) 100%);
+    margin: 20px;
+    position: relative;
+    top: 25%;
+}
+.reason h2{
+    position: absolute;
+    top: 0;
+    margin: 50px 5px;
+    color: aliceblue;
+    left: 10%;
+}
+.reason p{
+    position: absolute;
+    top: 30%;
+    margin: 50px 5px;
+    color: aliceblue;
+    left: 10%;
+}
+footer{
+    width: 100%;
+    height: 500px;
+    color: aliceblue;
+    display: flex;
+   
+}
+footer p{
+    text-align: center;
+     margin: auto;
+}
+footer p span{
+    color: rgb(70, 70, 70);
+    cursor: pointer
 }
